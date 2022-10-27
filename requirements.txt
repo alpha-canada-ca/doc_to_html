@@ -1,3 +1,4 @@
+html5print==0.1.2
 beautifulsoup4==4.10.0
 certifi==2020.4.5.1
 charset-normalizer==2.0.9
@@ -7,7 +8,7 @@ colorama==0.4.4
 Flask==2.0.2
 gunicorn==20.1.0
 idna==3.3
-importlib-metadata==4.10.0
+importlib-metadata==4.8.3
 itsdangerous==2.0.1
 Jinja2==3.0.3
 lxml==4.9.1
