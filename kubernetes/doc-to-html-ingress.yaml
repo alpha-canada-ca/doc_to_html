@@ -1,0 +1,22 @@
+apiVersion: extensions/v1
+kind: Ingress
+metadata:
+  name: doc-to-html-ingress
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+spec:
+  tls:
+  - hosts:
+    - doc-to-html.tbs.alpha.canada.ca
+    secretName: doc-to-html-tls-secret-prod
+  rules:
+  - host: doc-to-html.tbs.alpha.canada.ca
+    http:
+      paths:
+      - backend:
+          service:
+            name: doc-to-html
+            port:
+              number: 5000
+        path: /
