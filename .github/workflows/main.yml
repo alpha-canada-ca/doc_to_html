@@ -19,7 +19,7 @@ jobs:
     - run: |
         docker build -f ./docker/Dockerfile . -t tbsacr.azurecr.io/doc-to-html:${{ github.sha }}
         docker push tbsacr.azurecr.io/doc-to-html:${{ github.sha }}
-    # Set the target AKS cluster.
+    # Set the target AKS cluster.S
     - uses: Azure/aks-set-context@v1
       with:
         creds: '${{ secrets.AZURE_CREDENTIALS }}'
