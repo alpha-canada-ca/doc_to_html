@@ -32,6 +32,7 @@ jobs:
         manifests: |
           kubernetes/doc-to-html-deployment.yaml
           kubernetes/doc-to-html-service.yaml
+          kubernetes/doc-to-html-ingress.yml
         images: |
           tbsacr.azurecr.io/doc-to-html:${{ github.sha }}
         namespace: |
