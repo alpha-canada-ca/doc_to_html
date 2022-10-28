@@ -18,6 +18,6 @@ spec:
           service:
             name: doc-to-html
             port:
-              number: 8080
+              number: 5000
         path: /
         pathType: Prefix
