@@ -1,4 +1,4 @@
-apiVersion: extensions/v1
+apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: doc-to-html-ingress
@@ -18,5 +18,6 @@ spec:
           service:
             name: doc-to-html
             port:
-              number: 5000
+              number: 8080
         path: /
+        pathType: Prefix
