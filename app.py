@@ -13,6 +13,8 @@ app = Flask(__name__)
 
 UPLOAD_FOLDER = "tmp"
 app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER
+app.static_folder = 'static'
+
 
 custom_styles = open("custom_styles.txt", "r", encoding="utf-8").read()
 
