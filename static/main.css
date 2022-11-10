@@ -1,0 +1,11 @@
+.alpha-top {
+  font-size: 1.5rem;
+  background-color: #b8d7ff;
+  z-index: 100;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: rgba(60, 64, 67, 0.1) 0 1px 2px 3px, rgba(60, 64, 67, 0.35) 0 2px 6px 2px;
+}
+
+label {
+  margin-bottom: 0 !important;
+}
