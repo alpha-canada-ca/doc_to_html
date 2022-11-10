@@ -5,7 +5,6 @@ from flask import Flask
 from flask import request
 from flask import render_template
 import mammoth
-from html5print import HTMLBeautifier
 from bs4 import BeautifulSoup
 from werkzeug.utils import secure_filename
 import textstat
@@ -418,13 +417,11 @@ def html_convert():
 
     # clean up the generated html page into filedata
     (filedata, _, filedata3) = cleanup_html_data(combined_page)
+    # write the cleaned up filedata to the html page
+    html_page = BeautifulSoup(filedata, "html.parser")
+    aem_page = BeautifulSoup(filedata3, "html.parser")
 
-    # write the clean filedata to the html page and format it for the user
-    html_page = HTMLBeautifier.beautify(filedata, 4)
-    aem_page = HTMLBeautifier.beautify(filedata3, 4)
-
-    # get readability score from non formatted page (formatted page gives significantly worse score for some reason)
-    aem_page_for_scoring = filedata3
+    # get readanility score
 
     (
         total_score,
@@ -439,7 +436,7 @@ def html_convert():
         len_par,
         original_score,
         fkpoints,
-    ) = readability_score(aem_page_for_scoring)
+    ) = readability_score(aem_page)
 
     return render_template(
         f"code_{lang}.html",
