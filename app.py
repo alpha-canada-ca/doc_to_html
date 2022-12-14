@@ -47,12 +47,6 @@ def homepage():
     return render_template(f"index_{lang}.html", lang=lang)
 
 
-@app.route("/instructions", methods=["GET"])
-def instructions():
-    """Render Instructions Page"""
-    lang = request.args.get("lang", "en")
-    return render_template(f"instructions_{lang}.html", lang=lang)
-
 
 def cleanup_html_data(html_data):
     """Do a bunch of replaces to cleanup the data"""
