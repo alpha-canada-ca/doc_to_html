@@ -1,68 +1,72 @@
 <!DOCTYPE html>
 <html lang="fr">
-   <head>
-      <meta charset="utf-8">
-      <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-      <title>DOCX à Canada.ca</title>
-      <meta content="width=device-width,initial-scale=1" name="viewport">
-      <!-- Meta data -->
-      <meta name="description" content="La Boîte à outils de l’expérience Web (BOEW) rassemble différents composants réutilisables et prêts-à-utiliser pour la conception et la mise à jour de sites Web innovateurs qui sont à la fois accessibles, conviviaux et interopérables. Tous ces composants réutilisables sont des logiciels libres mis à la disposition des ministères et des collectivités Web externes.">
-      <!-- Meta data-->
-      <!-- Load closure template scripts -->
-      <link rel=stylesheet type=text/css href="{{ url_for('static', filename='main.css') }}">
-      <script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/soyutils.js"></script>
-      <script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/wet-fr.js"></script>
-      <noscript>
-         <!-- Write closure fall-back static file -->
-         <!-- /ROOT/app/cls/WET/gcweb/v4_0_30/cdts/static/refTop.html -->
-         <!--[if gte IE 9 | !IE ]><!-->
-         <link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/assets/favicon.ico" rel="icon" type="image/x-icon">
-         <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/css/theme.min.css">
-         <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/cdtsfixes.css">
-         <!-- Are you using the application templates? If so add the following CSS file -->
-         <!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/cdtsapps.css">-->
-         <!--<![endif]-->
-         <!--[if lt IE 9]>
+
+<head>
+   <meta charset="utf-8">
+   <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+   <title>DOCX à Canada.ca</title>
+   <meta content="width=device-width,initial-scale=1" name="viewport">
+   <!-- Meta data -->
+   <meta name="description"
+      content="La Boîte à outils de l’expérience Web (BOEW) rassemble différents composants réutilisables et prêts-à-utiliser pour la conception et la mise à jour de sites Web innovateurs qui sont à la fois accessibles, conviviaux et interopérables. Tous ces composants réutilisables sont des logiciels libres mis à la disposition des ministères et des collectivités Web externes.">
+   <!-- Meta data-->
+   <!-- Load closure template scripts -->
+   <link rel=stylesheet type=text/css href="{{ url_for('static', filename='main.css') }}">
+   <script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/soyutils.js"></script>
+   <script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/wet-fr.js"></script>
+   <noscript>
+      <!-- Write closure fall-back static file -->
+      <!-- /ROOT/app/cls/WET/gcweb/v4_0_30/cdts/static/refTop.html -->
+      <!--[if gte IE 9 | !IE ]><!-->
+      <link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/assets/favicon.ico" rel="icon"
+         type="image/x-icon">
+      <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/css/theme.min.css">
+      <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/cdtsfixes.css">
+      <!-- Are you using the application templates? If so add the following CSS file -->
+      <!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/cdtsapps.css">-->
+      <!--<![endif]-->
+      <!--[if lt IE 9]>
          <link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/assets/favicon.ico" rel="shortcut icon" />
          <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/css/ie8-theme.min.css" />
          <![endif]-->
-         <!--[if lte IE 9]><![endif]-->
-         <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/css/noscript.min.css" />
-         <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/cdtsnoscript.css" />
-      </noscript>
-      <!-- Write closure template -->
-      <script>
-         document.write(wet.builder.refTop({
+      <!--[if lte IE 9]><![endif]-->
+      <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/css/noscript.min.css" />
+      <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/cdtsnoscript.css" />
+   </noscript>
+   <!-- Write closure template -->
+   <script>
+      document.write(wet.builder.refTop({
 
-         	"isApplication": true
-         }));
-      </script>
-  </head>
+         "isApplication": true
+      }));
+   </script>
+</head>
 
-  <body vocab="http://schema.org/" typeof="WebPage">
-    <section class="experimental alpha-top">
+<body vocab="http://schema.org/" typeof="WebPage">
+   <section class="experimental alpha-top">
       <h2 class="wb-inv">Alpha</h2>
       <div class="container">
-        <label class="alpha-label">Alpha</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <p style="display: inline;">This is an experimental version of Canada.ca for public testing.</p>
+         <label class="alpha-label">Alpha</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <p style="display: inline;">This is an experimental version of Canada.ca for public testing.</p>
       </div>
-    </section>
-      <div id="def-top">
-         <!-- Write closure fall-back static file -->
-         <!-- /ROOT/app/cls/WET/gcweb/v4_0_30/cdts/static/appTop-fr.html -->
-         <ul id="wb-tphp">
-            <li class="wb-slc"><a class="wb-sl" href="#wb-cont">Passer au contenu principal</a></li>
-            <li class="wb-slc visible-sm visible-md visible-lg"><a class="wb-sl" href="#wb-info">Passer à «&#160;À propos de cette application Web&#160;»</a></li>
-            <!-- Si vous avez un pied de page personnalisé, veuillez remplacer la ligne précédente par celle-ci
+   </section>
+   <div id="def-top">
+      <!-- Write closure fall-back static file -->
+      <!-- /ROOT/app/cls/WET/gcweb/v4_0_30/cdts/static/appTop-fr.html -->
+      <ul id="wb-tphp">
+         <li class="wb-slc"><a class="wb-sl" href="#wb-cont">Passer au contenu principal</a></li>
+         <li class="wb-slc visible-sm visible-md visible-lg"><a class="wb-sl" href="#wb-info">Passer à «&#160;À propos
+               de cette application Web&#160;»</a></li>
+         <!-- Si vous avez un pied de page personnalisé, veuillez remplacer la ligne précédente par celle-ci
                <li class="wb-slc visible-sm visible-md visible-lg"><a class="wb-sl" href="#wb-info">Passer à «&#160;Liens connexes&#160;»</a></li>
                -->
-            <!-- Si vous avez un menu de section
+         <!-- Si vous avez un menu de section
                <li class="wb-slc visible-md visible-lg"><a class="wb-sl" href="#wb-sec">Passer au menu de la section</a></li>
                -->
-         </ul>
-         <header class="gc-app">
-            <div id="wb-bnr" class="container">
-               <!-- Adjust the default language flip URL or remove this <section>
+      </ul>
+      <header class="gc-app">
+         <div id="wb-bnr" class="container">
+            <!-- Adjust the default language flip URL or remove this <section>
                   <section id="wb-lng" class="text-right">
                   	<h2 class="wb-inv">Sélection de la langue</h2>
                   	<ul class="list-inline margin-bottom-none">
@@ -70,14 +74,15 @@
                   	</ul>
                   </section>
                   -->
-               <div class="row">
-                  <div class="brand col-xs-5 col-md-4">
-                     <a href="https://www.canada.ca/en.html">
-                     <img src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/assets/sig-blk-fr.svg" alt="" />
+            <div class="row">
+               <div class="brand col-xs-5 col-md-4">
+                  <a href="https://www.canada.ca/en.html">
+                     <img src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/assets/sig-blk-fr.svg"
+                        alt="" />
                      <span class="wb-inv"> Gouvernement du Canada / <span lang="en">Government of Canada</span></span>
-                     </a>
-                  </div>
-                  <!-- Adjust this search section depending on your application search
+                  </a>
+               </div>
+               <!-- Adjust this search section depending on your application search
                      <section id="wb-srch" class="col-lg-8 text-right visible-md visible-lg">
                      	<h2>Recherche</h2>
                      	<form action="#" method="post" name="cse-search-box" role="search" class="form-inline">
@@ -91,18 +96,18 @@
                      	</form>
                      </section>
                      -->
-               </div>
             </div>
-            <div class="app-bar">
-               <div class="container">
-                  <div class="row">
-                     <!-- If you want to use the settings or sign in/out buttons then add col-sm-7 -->
-                     <section class="col-xs-12">
-                        <!-- Entrez le nom et URL de votre application ci-bas -->
-                        <h2 class="wb-inv">DOCX à Canada.ca</h2>
-                        <a class="app-name" href="#">DOCX à Canada.ca</a>
-                     </section>
-                     <!-- Si vous utilisez le bouton de connexion/déconnexion ou les paramètres du compte
+         </div>
+         <div class="app-bar">
+            <div class="container">
+               <div class="row">
+                  <!-- If you want to use the settings or sign in/out buttons then add col-sm-7 -->
+                  <section class="col-xs-12">
+                     <!-- Entrez le nom et URL de votre application ci-bas -->
+                     <h2 class="wb-inv">DOCX à Canada.ca</h2>
+                     <a class="app-name" href="#">DOCX à Canada.ca</a>
+                  </section>
+                  <!-- Si vous utilisez le bouton de connexion/déconnexion ou les paramètres du compte
                         <nav class="col-sm-5 hidden-xs hidden-print">
                         	<h2 class="wb-inv">Menu des paramètres du compte</h2>
                         	<ul class="app-list-account list-unstyled">
@@ -112,10 +117,10 @@
                         	</ul>
                         </nav>
                         -->
-                  </div>
                </div>
             </div>
-            <!-- Remove the whole <nav> if you want to disable breadcrumbs
+         </div>
+         <!-- Remove the whole <nav> if you want to disable breadcrumbs
                <nav id="wb-bc" property="breadcrumb">
                	<h2>Vous êtes ici :</h2>
                	<div class="container">
@@ -127,53 +132,204 @@
                	</div>
                </nav>
                -->
-         </header>
-      </div>
-      <!-- Write closure template -->
-      <script>
-			document.write(wet.builder.refTop({
-				"isApplication": true
-			}));
-		</script>
+      </header>
+   </div>
+   <!-- Write closure template -->
+   <script>
+      document.write(wet.builder.refTop({
+         "isApplication": true
+      }));
+   </script>
 
-      <script>
-         var defTop = document.getElementById("def-top");
-         defTop.outerHTML = wet.builder.appTop({
+   <script>
+      var defTop = document.getElementById("def-top");
+      defTop.outerHTML = wet.builder.appTop({
 
-         	"appName": [{"text": "Convertir un DOCX à Canada.ca", "href": "#"}],
-         	"lngLinks": [{"lang": "en",	"href": "#", "text": "English"}],
-          "menuLinks": [
-            {"text":"Téléverser DOCX", "href":"/?&lang=fr"},
-            {"text":"Instructions", "href":"/instructions?&lang=fr"
-          }]
-         });
+         "appName": [{ "text": "Convertir un DOCX à Canada.ca", "href": "#" }],
+         "lngLinks": [{ "lang": "en", "href": "#", "text": "English" }]
+      });
+   </script>
+   <main role="main" property="mainContentOfPage" class="container wb-prettify all-pre">
+
+      <h1>Téléverser DOCX</h1>
+      <script>
+         const langElem = document.querySelector("#wb-lng a");
+         langElem.href = `${window.location.origin}/?&lang=${document.documentElement.lang === "en" ? "fr" : "en"}`
       </script>
-      <main role="main" property="mainContentOfPage" class="container wb-prettify all-pre">
 
-         <h1>Téléverser DOCX</h1>
-         <script>
-            let langElem = document.getElementById("wb-lng").getElementsByTagName("a")[0];
-            let toggleURL = window.location + "";
-            if (document.documentElement.lang === 'en') {
-                toggleURL = toggleURL.replace("&lang=en", "");
-                toggleURL += "?&lang=fr";
-            } else {
-                toggleURL = toggleURL.replace("&lang=fr", "");
-                toggleURL += "?&lang=en";
-            }
-            langElem.setAttribute("href", toggleURL);
-         </script>
-
-         <div class="container">
-
-           <p>Téléverser un fichier Word pour le convertir en HTML pour Canada.ca:</p>
-           <form method="POST" action="/html_convert?&lang=fr" enctype="multipart/form-data">
+      <div class="container">
+         <p>Téléverser un fichier Word pour le convertir en HTML pour Canada.ca:</p>
+         <form method="POST" action="/html_convert?&lang=fr" enctype="multipart/form-data">
             <div>
-                <label for="files" class="btn btn-call-to-action">Téléverser un fichier DOCX</label>
-                <input  id="files" style="visibility:hidden;" type="file" name="file" accept=".doc,.docx" onchange="form.submit()"/>
-              </div>
-       </form>
+               <label for="files" class="btn btn-call-to-action">Téléverser un fichier DOCX</label>
+               <input id="files" style="visibility:hidden;" type="file" name="file" accept=".doc,.docx"
+                  onchange="form.submit()" />
+            </div>
+         </form>
+      </div>
+
+      <div class="container">
+         <h1>Instructions</h1>
+
+         <h2 class="h3">Sur cette page</h2>
+         <ul>
+            <li><a href="#_Utiliser_le_gabarit">Étape 1 : utiliser le gabarit Word</a></li>
+            <li><a href="#_Utiliser_les_styles">Étape 2 : applliquer les styles Word</a></li>
+            <li><a href="#_Televerser">Étape 3 : téléverser le document Word</a></li>
+            <li><a href="#_Utiliser_le_code">Étape 4 : utiliser le code dans des prototypes</a></li>
+         </ul>
+         <h2 id="_Use_the_Word"><a id="_Utiliser_le_gabarit">Étape 1: utiliser le gabarit Word</a></h2>
+         <p>Utilisez ce gabarit MS Word :</p>
+         <p><a href="https://github.com/quidampepin/doc_to_html/raw/main/word_template/template.dotx">Télécharger le
+               gabarit MS Word</a></p>
+         <p>Dans votre document Word, allez dans Fichier &gt; Options, et sélectionnez Compléments. En bas, allez dans
+            Gérer, sélectionnez Modèles, et cliquez sur Aller. Cliquez sur Joindre et sélectionnez le modèle que vous
+            avez téléchargé. Cochez "Mettre à jour automatiquement les styles du document". Cliquez sur OK.</p>
+
+         <p>Vous pouvez également partir d'un de ces exemples de documents :</p>
+         <details>
+            <summary>Exemples de documents</summary>
+            <ul>
+               <li><a href="https://github.com/quidampepin/doc_to_html/raw/main/sample_docs/simple_formatting.docx">Mise
+                     en forme de base</a></li>
+               <li><a href="https://github.com/quidampepin/doc_to_html/raw/main/sample_docs/subway_nav.docx">Navigation
+                     de style métro</a></li>
+               <li><a href="https://github.com/quidampepin/doc_to_html/raw/main/sample_docs/ineternal_links.docx">Liens
+                     internes (ancrage automatique)</a></li>
+               <li><a href="https://github.com/quidampepin/doc_to_html/raw/main/sample_docs/multi_page_nav.docx">Navigation
+                     multi-pages</a></li>
+               <li><a href="https://github.com/quidampepin/doc_to_html/raw/main/sample_docs/topic.docx">Page de sujet
+                     (Bêta)</a></li>
+            </ul>
+         </details>
+         <h2 id="_Use_Word_styles"><a id="_Utiliser_les_styles">Étape 2 : appliquer les styles Word</a></h2>
+         <p>Les styles de base (titres, listes à puces, gras, italique, etc.) fonctionneront sans problème et seront
+            transformés en éléments HTML appropriés. Certains styles personnalisés ont été ajoutés (disponibles dans le
+            ruban styles).</p>
+         <details>
+            <summary>Afficher-masquer</summary>
+            <ul>
+               <li>Appliquez le style "summary" à la partie visible de l'élément afficher-masquer.</li>
+               <li>Utilisez n'importe quel style pour la partie du contenu qui est cachée</li>
+               <li>Après la partie cachée, ajoutez le mot "end" (sans majuscules, sans gras, rien), et appliquez le
+                  style "details" à ce mot. Cela indiquera au script quand fermer la balise HTML "details".</li>
+            </ul>
+         </details>
+         <details>
+            <summary>Alertes</summary>
+            <p>Les alertes ont besoin d'un titre. Appliquez le bon style d'alerte à l'en-tête (alert-info,
+               alert-warning, alert-danger, etc.), et appliquez "alert-text" au texte de l'alerte.</p>
+         </details>
+         <details>
+            <summary>Boîte grise (wells)</summary>
+            <ul>
+               <li>Appliquez le style "well" au paragraphe que vous voulez dans une nouvelle boîte grise (well).</li>
+               <li>Appliquez le style "well-paragraph" à un nouveau paragraphe que vous voulez dans cette même boîte
+                  grise</li>
+               <li>Appliquez le style "well-bullet" à un nouvel item de liste à puces que vous voulez dans cette même
+                  boîte grise</li>
+            </ul>
+         </details>
+         <details>
+            <summary>Boutons</summary>
+            <p>Appliquez le bon style de bouton au texte (btn-cta, btn-danger, btn-primaire, etc.). Veillez à ajouter un
+               lien hypertexte au texte du bouton.</p>
+         </details>
+
+         <details>
+            <summary>Citations</summary>
+            <ul>
+               <li>Appliquez le style "quote" au premier paragraphe que vous voulez voir apparaître comme citation</li>
+               <li>Appliquez le style "quote-par" pour un autre paragraphe que vous voulez apparaître dans la même
+                  citation</li>
+               <li>Appliquez le style "quote-source" pour indiquer la source de la citation (facultatif)</li>
+            </ul>
+         </details>
+         <details>
+            <summary>Étiquettes</summary>
+            <p>Appliquez le bon style d'étiquette au texte (label-danger, label-default, label-info, label-primary,
+               etc.).</p>
+         </details>
+         <details>
+            <summary>Liens internes</summary>
+            <p>Le script peut gérer les liens internes et créer des ancres automatiquement.</p>
+            <ul>
+               <li>Dans Word, mettez en surbrillance le texte auquel vous souhaitez ajouter un lien hypertexte.</li>
+               <li>Insérez un hyperlien.</li>
+               <li>Choisissez "Emplacements dans le document".”</li>
+               <li>Sélectionnez l'en-tête vers lequel vous voulez que le lien se dirige.</li>
+            </ul>
+         </details>
+
+         <details>
+            <summary>Navigation multi-pages</summary>
+            <ul>
+               <li>Avant les items de navigation, ajoutez le mot "start" (pas de majuscules, pas de gras, rien), et
+                  appliquez le style "multi-pate-start" à ce mot.</li>
+               <li>Appliquez le style "multi-page-active" à l'item de navigation de la page sur laquelle vous vous
+                  trouvez.</li>
+               <li>Appliquez le style "multi-page-item" à tous les autres items de navigation.</li>
+               <li>Après les éléments de navigation, ajoutez le mot "end" (pas de majuscules, pas de gras, rien), et
+                  appliquez le style "multi-page-end" à ce mot.</li>
+            </ul>
+         </details>
+         <details>
+            <summary>Liste numérotée</summary>
+            <p>Appliquez le style "numbered" aux éléments de la liste numérotée.</p>
+         </details>
+         <details>
+            <summary>Navigation de style métro</summary>
+            <ul>
+               <li>Appliquez le style "subway-group-h1" au nom du groupe de pages (en tant que tout premier élément de
+                  votre document Word).</li>
+               <li>Appliquez le style "subway-nav-active" à l'item de navigation de la page sur laquelle vous vous
+                  trouvez.</li>
+               <li>Appliquez le style "subway-nav" à tous les autres items de navigation.</li>
+               <li>Appliquez le style "subway-section-h1" à la section H1 de la page sur laquelle vous vous trouvez
+                  (juste après la liste des items de navigation).</li>
+            </ul>
+         </details>
+         <details>
+            <summary>Panneaux</summary>
+            <p>Les panneaux ont besoin d'un titre. Appliquez le bon style de panneau à l'en-tête (panel-default,
+               panel-warning, panel-danger, etc.), et appliquez "panel-text" au texte du panneau.</p>
+            <p>Les panneaux ont besoin d'un en-tête pour fonctionner correctement.</p>
+            <ul>
+               <li>Appliquez le bon style de panneau à l'en-tête (panel-default, panel-warning, panel-danger, etc.)</li>
+               <li>Appliquez "panel-text" au texte du panneau.</li>
+               <li>Appliquez "panel-bullet" à un élément d'une liste à puce dans le panneau.</li>
+            </ul>
+         </details>
+
+         <h2 id="_Televerser">Étape 3 : téléverser documents Word</h2>
+         <p>Aller à <a href="/">Téléverser DOCX</a>, puis cliquez sur Téléverser un fichier DOCX.</p>
+
+         <h2 id="_Utiliser_le_code">Étape 4: utiliser le code dans des prototypes</h2>
+         <p>Le script génère 2 extraits de code : le code pour la page complète (que vous pouvez copier dans GitHub, par
+            exemple), et le code pour la section principale (que vous pouvez copier dans AEM, par exemple). </p>
+         <h3>Code pour la page complète</h3>
+         <ul>
+            <li>Ouvrez la section affichable "Code pour la page complète"</li>
+            <li>Cliquez sur “Copier le code dans le presse-papiers ”</li>
+            <li>Si vous voulez que le code soit formaté correctement, allez dans un formateur HTML (par exemple, <a
+                  href="https://www.freeformatter.com/html-formatter.html">https://www.freeformatter.com/html-formatter.html</a>)
+               et collez le code.</li>
+            <li>Collez le code là où vous en avez besoin (par exemple, dans une section GitHub pour votre organisation).
+            </li>
+         </ul>
+         <h3>Code pour AEM</h3>
+         <ul>
+            <li>Ouvrez la section affichable "Code pour AEM"</li>
+            <li>Cliquez sur “Copier le code dans le presse-papiers ”</li>
+            <li>Si vous voulez que le code soit formaté correctement, allez dans un formateur HTML (par exemple, <a
+                  href="https://www.freeformatter.com/html-formatter.html">https://www.freeformatter.com/html-formatter.html</a>)
+               et collez le code.</li>
+            <li>Dans AEM, utilisez in composant HTML</li>
+            <li>Collez le code</li>
+            <li>Vous devrez peut-être supprimer la balise "main" et la balise "h1" (et la balise "main" de fermeture), à
+               moins que vous ne supprimiez le H1 qui vient automatiquement dans AEM</li>
+         </ul>
 
 
 
- </div>
+      </div>
